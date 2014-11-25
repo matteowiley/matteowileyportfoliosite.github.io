@@ -189,7 +189,9 @@
 			}
 
 	/* Image */
-
+		.headshot {
+			padding-top: 2em;
+		}
 		.image
 		{
 			display: inline-block;
