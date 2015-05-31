@@ -595,7 +595,6 @@
 			.box.style1
 			{
 				background: #fff;
-				padding: 3em;
 			}
 			
 				.box.style1 .image
@@ -609,22 +608,17 @@
 					overflow: hidden;
 				}
 
-					.box.style1 .image img
-					{
-						position: absolute;
-						top: 0;
-						height: 100%;
-						width: auto;
-					}
+				.box.style1 .image
+				{
+					position: relative !important;
+					left: 0 !important;
+					width: 100% !important;
+					height: auto !important;
+				}
 
 				.box.style1 .inner
 				{
 				}
-
-					.box.style1 .inner > :last-child
-					{
-						margin: 0;
-					}
 				
 				.box.style1.right
 				{
@@ -642,12 +636,18 @@
 					
 					.box.style1.right .inner
 					{
-						margin-left: 50%;
-						padding-left: 3em;
+						padding: 3em;
 					}
 				
-				.box.style1.left
+				.box.style1.left .inner a,  .box.style1.right .inner a
 				{
+					float: right;
+				}
+				.box.style1.left .inner p,  .box.style1.right .inner p
+				{
+					text-align: left !important;
+					max-width: 1000 !important;
+					margin: 0 auto !important;
 				}
 
 					.box.style1.left .image
@@ -662,8 +662,7 @@
 					
 					.box.style1.left .inner
 					{
-						margin-right: 50%;
-						padding-right: 3em;
+						padding: 3em;
 					}
 
 			.box.style2
@@ -880,7 +879,9 @@
 
 		#banner p
 		{
-			margin: 0;
+			margin: 0 auto;
+			text-align: left;
+			max-width: 1000px
 		}
 
 		#banner footer
@@ -1116,3 +1117,7 @@
 			{
 				opacity: 1.0;
 			}
+
+
+
+
